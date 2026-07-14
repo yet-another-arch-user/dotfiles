@@ -1,0 +1,66 @@
+@import "colors.css";
+
+* {
+    all: unset;
+    font-family: "JetBrainsMono Nerd Font Propo", monospace;
+}
+
+window#waybar {
+    background-color: @bg0;
+    color: @fg;
+    border-radius: 0 0 10px 10px;
+}
+
+
+#workspaces {
+    padding: 2px 4px;
+    margin: 7px 0;
+}
+
+#workspaces button {
+    background-color: @bg4;
+    padding: 2px 12px;
+    border-radius: 10px;
+    margin: 0 2px;
+    color: transparent;
+}
+
+#workspaces button.active {
+    background-color: @blue;
+    color: @base;
+    min-width: 1.2rem;
+}
+
+#workspaces button.empty {
+    opacity: 0.4;
+}
+
+#workspaces button:hover {
+    opacity: 0.8;
+    background-color: @grey2;
+    transition: all 0.3s ease-in;
+}
+
+
+#clock {
+    margin: 0 7px;
+    color: @green;
+}
+
+#clock.date {
+    color: @purple;
+}
+
+#pulseaudio {
+    margin: 0 15px;
+    color: @orange;
+}
+
+#custom-swaync {
+	margin: 0 15px 0 0px;
+}
+
+.modules-left {
+    margin-right: 12px;
+    padding-left: 12px;
+}
