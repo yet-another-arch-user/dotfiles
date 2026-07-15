@@ -2,7 +2,7 @@
 
 * {
     all: unset;
-    font-family: "JetBrainsMono Nerd Font Propo", monospace;
+    font-family: "Geist Mono Nerd Font Propo", "JetBrainsMono Nerd Font Propo", monospace;
 }
 
 window#waybar {
