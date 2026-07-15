@@ -4,7 +4,7 @@
 
 -- Set programs that you use
 local terminal    = "foot"
-local fileManager = "dolphin"
+local fileManager = "thunar"
 local menu        = "fuzzel || pkill fuzzel"
 
 ---------------------
