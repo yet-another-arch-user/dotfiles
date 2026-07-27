@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background-color: @bg0;
+    background-color: @bg;
     color: @fg;
     border-radius: 0 0 10px 10px;
 }
@@ -18,7 +18,7 @@ window#waybar {
 }
 
 #workspaces button {
-    background-color: @bg4;
+    background-color: @surface;
     padding: 2px 12px;
     border-radius: 10px;
     margin: 0 2px;
@@ -26,8 +26,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: @blue;
-    color: @base;
+    background-color: @dim;
+    color: white;
     min-width: 1.2rem;
 }
 
@@ -37,14 +37,14 @@ window#waybar {
 
 #workspaces button:hover {
     opacity: 0.8;
-    background-color: @grey2;
+    background-color: @dim;
     transition: all 0.3s ease-in;
 }
 
 
 #clock {
     margin: 0 7px;
-    color: @green;
+    color: @blue;
 }
 
 #clock.date {
