@@ -80,3 +80,6 @@ alias pS='sudo pacman -S'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+cat $HOME/.config/foot/sequences
+
