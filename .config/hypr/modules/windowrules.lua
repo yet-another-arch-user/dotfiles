@@ -44,3 +44,10 @@ hl.layer_rule({
     match = { namespace = "launcher" },
     dim_around = true,
 })
+
+hl.layer_rule({
+    match = { namespace = "waybar" },
+    blur = true,
+    ignore_alpha = 0
+})
+
