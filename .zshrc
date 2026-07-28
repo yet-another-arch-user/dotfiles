@@ -81,5 +81,3 @@ alias pS='sudo pacman -S'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-cat $HOME/.config/foot/sequences
-

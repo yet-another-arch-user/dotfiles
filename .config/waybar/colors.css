@@ -1,5 +1,4 @@
-/* @define-color bg #2d3a2e; */
-@define-color bg rgba(45, 58, 46, 0.5);
+@define-color bg #2d3a2e;
 @define-color fg #c8d5b9;
 @define-color surface #38483a;
 @define-color dim #7a9478;
@@ -10,16 +9,3 @@
 @define-color blue #80b0d8;
 @define-color purple #c888c8;
 @define-color orange #e8b84a;
-
-/* color3='#c8b050'
-color4='#e8b84a'
-color5='#c888c8'
-color6='#80b0d8'
-color7='#7a9478'
-color8='#38483a'
-color9='#c87878'
-color10='#78b898'
-color11='#c8b050'
-color12='#e8b84a'
-color14='#80b0d8'
-color15='#c8d5b9' */
