@@ -1,18 +1,43 @@
 @import "colors.css";
 
+/*
+primary: active button, high priority
+on_primary: background
+primary_container: low priority button
+on_primary_container: hover
+
+secondary: text
+on_secondary: invert text color
+
+outline, surface_tint, tertiary: variant colors
+*/
+
+
 * {
     all: unset;
-    font-family: "Geist Mono Nerd Font Propo", "JetBrainsMono Nerd Font Propo", monospace;
+    font-family: "JetBrainsMono Nerd Font Propo", "Geist Mono Nerd Font Propo",  monospace;
+    font-weight: 500;
 }
 
 window#waybar {
-    background-color: @bg;
-    color: @fg;
-    border-radius: 0 0 10px 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    color: @secondary;
 
 }
 
+.modules-left {
+    background-color: @on_primary;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.modules-right {
+    background-color: @on_primary;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
 
 #workspaces {
     padding: 2px 4px;
@@ -20,49 +45,49 @@ window#waybar {
 }
 
 #workspaces button {
-    background-color: @surface;
-    padding: 2px 12px;
+    background-color: @primary_container;
+    padding: 3px 12px;
     border-radius: 10px;
-    margin: 0 2px;
-    color: transparent;
+    margin: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.active {
-    background-color: @dim;
-    color: white;
+    background-color: @primary;
     min-width: 1.2rem;
+    color: @on_secondary;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.empty {
-    opacity: 0.4;
+    color: transparent;
 }
 
 #workspaces button:hover {
     opacity: 0.8;
-    background-color: @dim;
-    transition: all 0.3s ease-in;
+    background-color: @on_primary_container;
+    color: @on_secondary;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 
 #clock {
     margin: 0 7px;
-    color: @blue;
+    color: @tertiary ;
 }
 
 #clock.date {
-    color: @purple;
+    color: @surface_tint;
 }
 
 #pulseaudio {
     margin: 0 15px;
-    color: @orange;
+    color: @outline;
 }
 
 #custom-swaync {
 	margin: 0 15px 0 0px;
-}
-
-.modules-left {
-    margin-right: 12px;
-    padding-left: 12px;
 }

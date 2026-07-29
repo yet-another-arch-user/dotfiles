@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "width": 1000,
+    // "width": 1000,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
     "modules-right": ["pulseaudio", "clock#date", "clock"],
