@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "color.css";
 
 /*
 primary: active button, high priority
@@ -76,16 +76,16 @@ window#waybar {
 
 #clock {
     margin: 0 7px;
-    color: @tertiary ;
+    color: @primary;
 }
 
 #clock.date {
-    color: @surface_tint;
+    color: @secondary
 }
 
 #pulseaudio {
     margin: 0 15px;
-    color: @outline;
+    color: @tertiary
 }
 
 #custom-swaync {
