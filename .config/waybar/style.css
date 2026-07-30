@@ -1,16 +1,4 @@
-@import "color.css";
-
-/*
-primary: active button, high priority
-on_primary: background
-primary_container: low priority button
-on_primary_container: hover
-
-secondary: text
-on_secondary: invert text color
-
-outline, surface_tint, tertiary: variant colors
-*/
+@import "colors.css";
 
 
 * {
