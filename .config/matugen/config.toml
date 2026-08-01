@@ -18,3 +18,11 @@ post_hook = "pkill -SIGUSR2 waybar"
 input_path = '~/.config/matugen/templates/hyprland.lua'
 output_path = '~/.config/hypr/modules/colors.lua'
 
+[templates.foot]
+input_path = '~/.config/matugen/templates/foot.ini'
+output_path = '~/.config/foot/colors.ini'
+
+[templates.fuzzel]
+input_path = '~/.config/matugen/templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/colors.ini'
+
