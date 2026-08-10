@@ -3,7 +3,7 @@
     // "width": 1000,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "clock#date", "clock"],
+    "modules-right": ["tray", "pulseaudio", "clock#date", "clock"],
     // Modules configurations
     "clock": {
         "format": "{:%I:%M %p}"

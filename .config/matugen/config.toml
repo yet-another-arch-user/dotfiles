@@ -6,7 +6,8 @@ reload_apps_list = ["waybar"]
 [config.wallpaper]
 set = true
 pre_hook = "pkill swaybg || true"
-command = "swaybg -i {{ image }} &"
+command = "swaybg -i '{{ image }}' &"
+post_hook = "cp '{{ image }}' ~/.cache/prev_wallpaper"
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
