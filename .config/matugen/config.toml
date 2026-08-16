@@ -7,7 +7,6 @@ reload_apps_list = ["waybar"]
 set = true
 pre_hook = "pkill swaybg || true"
 command = "swaybg -i '{{ image }}' &"
-post_hook = "cp '{{ image }}' ~/.cache/prev_wallpaper"
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
@@ -18,6 +17,7 @@ post_hook = "pkill -SIGUSR2 waybar"
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland.lua'
 output_path = '~/.config/hypr/modules/colors.lua'
+post_hook = "cp {{ image }} $HOME/.cache/wallpaper"
 
 [templates.foot]
 input_path = '~/.config/matugen/templates/foot.ini'

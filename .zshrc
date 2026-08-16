@@ -78,6 +78,8 @@ alias ...='cd ../..'
 alias grep='grep --color=auto'
 alias pS='sudo pacman -S'
 
+alias mI='matugen --source-color-index 0 image'
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
