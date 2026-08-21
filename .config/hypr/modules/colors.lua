@@ -1,4 +1,4 @@
 return {
-	border_active = "#96ccf8",
-	border_inactive = "#00344f"
+	border_active = "#9fcafc",
+	border_inactive = "#003257"
 }
