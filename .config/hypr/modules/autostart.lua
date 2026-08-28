@@ -8,4 +8,5 @@
 --
 hl.on("hyprland.start", function () 
   hl.exec_cmd("matugen image $HOME/.cache/wallpaper --source-color-index 0 && waybar || matugen image $HOME/.config/wallpaper.jpg --source-color-index 0 && waybar")
+  hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 end)
