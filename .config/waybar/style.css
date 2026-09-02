@@ -28,13 +28,13 @@ window#waybar {
 }
 
 #workspaces {
-    padding: 2px 4px;
+    padding: 0px 4px;
     margin: 7px 0;
 }
 
 #workspaces button {
     background-color: @primary_container;
-    padding: 3px 12px;
+    padding: 2px 12px;
     border-radius: 10px;
     margin: 2px;
     animation: gradient_f 20s ease-in infinite;
@@ -83,3 +83,4 @@ window#waybar {
 #custom-swaync {
 	margin: 0 15px 0 0px;
 }
+
