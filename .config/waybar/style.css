@@ -3,84 +3,52 @@
 
 * {
     all: unset;
-    font-family: "JetBrainsMono Nerd Font Propo", "Geist Mono Nerd Font Propo",  monospace;
+    font-family: "JetBrainsMono Nerd Font Propo", monospace;
     font-weight: 500;
 }
 
 window#waybar {
-    background-color: transparent;
-    color: @secondary;
-
-}
-
-.modules-left {
-    background-color: @on_primary;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-.modules-right {
-    background-color: @on_primary;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
+    /* background-color: @on_primary; */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #workspaces {
-    padding: 0px 4px;
-    margin: 7px 0;
+    color: @fg;
 }
 
 #workspaces button {
-    background-color: @primary_container;
-    padding: 2px 12px;
-    border-radius: 10px;
-    margin: 2px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    /* background-color: @primary_container; */
+    padding: 6px 10px
 }
 
 #workspaces button.active {
-    background-color: @primary;
-    min-width: 1.2rem;
-    color: @on_secondary;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    /* background-color: @inverse_primary;
+    color: @on_primary_container; */
+    box-shadow: inset 0 -3px 0 @bg;
 }
 
-#workspaces button.empty {
-    color: transparent;
-}
 
 #workspaces button:hover {
-    opacity: 0.8;
-    background-color: @on_primary_container;
-    color: @on_secondary;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    box-shadow: inset 0 -3px 0 @bg;
 }
 
 
 #clock {
-    margin: 0 7px;
-    color: @primary;
+    color: @fg
 }
 
 #clock.date {
-    color: @secondary
+    color: @fg
 }
 
 #pulseaudio {
-    margin: 0 15px;
-    color: @tertiary
+    color: @variant
 }
 
-#tray {
-	margin-left: 15px;
-}
-
-#custom-swaync {
-	margin: 0 15px 0 0px;
+#tray,
+#clock,
+#clock.date,
+#pulseaudio {
+    padding: 6px 10px
 }
 

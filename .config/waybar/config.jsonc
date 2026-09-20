@@ -1,9 +1,9 @@
 {
     "layer": "top",
-    // "width": 1000,
+    "height": 10,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": [],
-    "modules-right": ["tray", "pulseaudio", "clock#date", "clock"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "pulseaudio", "clock#date"],
     // Modules configurations
     "clock": {
         "format": "{:%I:%M %p}"
@@ -13,17 +13,6 @@
     },
     "hyprland/workspaces": {
         "format": "{name}",
-        "on-click": "activate",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": ""
-        },
-        "persistent-workspaces": {
-            "*": 5
-        },
         "sort-by-number": true
     },
     "pulseaudio": {
@@ -37,5 +26,9 @@
         "on-click": "pavucontrol",
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+    "tray": {
+        "spacing": 5
     }
 }

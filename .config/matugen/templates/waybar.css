@@ -2,6 +2,8 @@
 * Css Colors
 * Generated with Matugen
 */
-<* for name, value in colors *>
-    @define-color {{name}} {{value.default.hex}};
-<* endfor *>
+
+@define-color bg {{colors.primary.default.rgba | set_alpha: 0.7}};
+@define-color fg {{colors.secondary.default.rgba}};
+@define-color variant {{colors.tertiary.default.rgba}};
+
