@@ -72,7 +72,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color=auto'
-alias la='ls -la --color=auto'
+alias la='ls -lah --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias grep='grep --color=auto'
