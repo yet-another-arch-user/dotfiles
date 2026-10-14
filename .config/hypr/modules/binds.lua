@@ -3,7 +3,7 @@
 ---------------------
 
 -- Set programs that you use
-local terminal    = "foot"
+local terminal    = "footclient"
 local fileManager = "nemo"
 local menu        = "fuzzel || pkill fuzzel"
 
