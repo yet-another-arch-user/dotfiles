@@ -27,6 +27,7 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("sway-screenshot -m region --clipboard-only"))
+hl.bind(mainMod .. " + CTRL + S", hl.dsp.exec_cmd("sway-screenshot -m region"))
 hl.bind("CTRL + ALT + W", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/relauch.sh"))
 
 -- Move focus with mainMod + arrow keys

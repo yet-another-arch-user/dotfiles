@@ -32,3 +32,6 @@ hl.env("QT_IM_MODULE", "fcitx")
 -- hl.env("XMODIFIERS", "@im", "fcitx")
 hl.env("SDL_IM_MODULE", "fcitx")
 hl.env("GLFW_IM_MODULE", "ibus")
+
+-- others
+hl.env("SWAY_SCREENSHOT_DIR", os.getenv("HOME") .. "/Pictures/Screenshots/")
