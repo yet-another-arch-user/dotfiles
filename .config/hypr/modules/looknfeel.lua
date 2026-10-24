@@ -46,6 +46,7 @@ hl.config({
             size     = 3,
             passes   = 2,
             vibrancy = 0.2,
+            xray     = true,
         },
     },
 })

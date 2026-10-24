@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-    /* background-color: @on_primary; */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: @bg_light;
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 #workspaces {
